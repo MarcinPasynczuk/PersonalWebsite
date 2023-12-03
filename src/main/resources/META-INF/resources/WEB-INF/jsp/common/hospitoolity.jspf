@@ -1,0 +1,40 @@
+
+<div class="d-flex justify-content-between">
+	<h2>Hospitoolity</h2>
+	<div>
+		<a href="https://www.hospitoolity.com" target="_blank"
+			class="btn btn-primary">Visit Website</a> <a
+			href="https://github.com/MarcinPasynczuk/Hospitoolity"
+			target="_blank" class="btn btn-info">View Alpha version code</a>
+	</div>
+</div>
+
+<p>Hospitoolity is a unique application designed to streamline and
+	improve food safety processes for the hospitality industry. This app is
+	primarily built for restaurants, hotels, catering companies, and other
+	related businesses in the UK.</p>
+
+<p>The app simplifies the process of managing Hazard Analysis and
+	Critical Control Point (HACCP) plans. This is achieved by enabling easy
+	data entry for crucial information such as critical control points,
+	monitoring procedures, and corrective actions. To ensure
+	confidentiality and compliance with regulations, Hospitoolity offers
+	secure data storage accessible from any device with internet access,
+	allowing for effective team collaboration.</p>
+
+<p>Beyond data management, Hospitoolity provides reporting and
+	analytical capabilities. These features enable businesses to identify
+	potential areas for improvement and demonstrate regulatory compliance
+	efficiently. The overarching goal of these features is to improve food
+	safety and quality by quickly identifying and addressing potential
+	hazards.</p>
+
+<p>By ensuring improved food safety and compliance with UK
+	regulations, Hospitoolity aims to reduce the risk of food-borne
+	illnesses and potential legal penalties. Consequently, businesses can
+	save valuable time and resources in managing HACCP data, increase
+	transparency and accountability, and enhance their reputation.</p>
+
+<p>Overall, Hospitoolity offers a valuable tool for businesses in
+	the hospitality industry to bolster food safety, assure regulatory
+	compliance, and improve operational efficiency.</p>

@@ -1,0 +1,18 @@
+
+<div class="d-flex justify-content-between">
+	<h2>Organizer</h2>
+	<div>
+		<a href="https://github.com/MarcinPasynczuk/Organizer" target="_blank"
+			class="btn btn-info">View code</a>
+	</div>
+</div>
+
+<p>Organizer is a Java-based web application built using the Spring
+	Boot framework. It leverages several components of the Spring
+	framework, including Spring Security for user authentication and
+	authorization, Spring MVC for managing the flow of data in the
+	application, and JPA for interacting with the database. With Organizer
+	2.0, users can easily manage and organize their daily tasks, events,
+	and appointments.</p>
+<img src="todo1.png" alt="todo1" class="img-fluid mb-4">
+<img src="todo2.png" alt="todo2" class="img-fluid mb-4">

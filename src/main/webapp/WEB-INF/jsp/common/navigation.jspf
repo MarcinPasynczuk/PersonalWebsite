@@ -1,0 +1,112 @@
+<style type="text/css">
+.container2 {
+<<<<<<< HEAD
+=======
+  margin-right: 15px !important;
+  margin-left: 15px !important;
+}
+
+.container2 {
+>>>>>>> 97669c8ae1ef8bcd214fa9da798fbdb5a2649ce0
+  font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+.container2 {
+    font-size: 30px;
+  }
+}
+
+.gamer-navbar {
+	background-color: #504170;
+	font-size: 1.5em;
+}
+
+.gamer-navbar .navbar-brand {
+	padding: 0.5rem 1rem !important;
+	color: #61dafb;
+	text-shadow: 0 0 5px #61dafb;
+	transition: color 0.3s ease;
+}
+
+.gamer-navbar .navbar-brand:hover {
+	color: #fff;
+}
+
+.gamer-navbar .nav-link {
+	padding: 0.5rem 1rem !important;
+	color: #fff;
+	position: relative;
+	transition: color 0.3s ease;
+}
+
+.gamer-navbar .nav-link:hover {
+	color: #61dafb !important;
+}
+
+.gamer-navbar .nav-link:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #61dafb;
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+}
+
+.gamer-navbar .nav-link:hover:before {
+	transform: scaleX(1);
+}
+
+.gamer-navbar .navbar-toggler {
+	font-size: 1.5em !important;
+	color: #61dafb !important;
+	border-color: #61dafb !important;
+}
+
+/* Dodatkowe style dla urządzeń mobilnych */
+@media screen and (max-width: 768px) {
+	.gamer-navbar {
+		font-size: 2.5em;  /* Zwiększenie rozmiaru czcionki */
+	}
+
+	.gamer-navbar .navbar-brand {
+		padding: 1rem 2rem !important;  /* Zwiększenie paddingu */
+	}
+
+	.gamer-navbar .nav-link {
+		padding: 1rem 2rem !important;  /* Zwiększenie paddingu */
+	}
+
+	.gamer-navbar .navbar-toggler {
+		font-size: 2.5em !important;  /* Zwiększenie rozmiaru ikony */
+	}
+}
+</style>
+
+<nav
+	class="navbar navbar-expand-md navbar-light mb-3 p-1 text-lg gamer-navbar">
+	<a class="navbar-brand gamer-navbar"
+		href="https://github.com/MarcinPasynczuk">Marcin Pasynczuk</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse"
+		data-target="#navbarNav" aria-controls="navbarNav"
+		aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item"><a class="nav-link" href="/"
+				style="color: #fff;">About me</a></li>
+			<li class="nav-item"><a class="nav-link" href="/portfolio"
+				style="color: #fff;">Portfolio</a></li>
+			<li class="nav-item"><a class="nav-link" href="/contact"
+				style="color: #fff;">Contact me</a></li>
+		</ul>
+		<ul class="navbar-nav">
+			<li class="nav-item"><a class="nav-link" href="/downloadCV"
+				style="color: #fff;">Download my CV</a></li>
+		</ul>
+	</div>
+</nav>

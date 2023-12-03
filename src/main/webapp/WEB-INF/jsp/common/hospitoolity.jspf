@@ -1,0 +1,33 @@
+
+<div class="d-flex justify-content-between">
+	<h2>Hospitoolity</h2>
+	<div>
+		<a href="https://www.hospitoolity.com" target="_blank"
+			class="btn btn-primary btn-lg">Visit Website</a> <a
+			href="https://github.com/MarcinPasynczuk/Hospitoolity"
+			target="_blank" class="btn btn-info btn-lg">View Alpha version code</a>
+	</div>
+</div>
+
+<p><b>Key tools used: Java, HTML, CSS, MongoDB, JavaScript, Vue3,
+Tailwind</b></p>
+<p>The expected release date for the commercial version of Hospitoolity in the market is September 2023.</p>
+<p>Hospitoolity is a unique application designed to streamline and
+	improve food safety processes for the hospitality industry. This app is
+	primarily built for restaurants, hotels, catering companies, and other
+	related businesses in the UK.</p>
+
+<p>The app simplifies the process of managing Hazard Analysis and
+	Critical Control Point (HACCP) plans. This is achieved by enabling easy
+	data entry for crucial information such as critical control points,
+	monitoring procedures, and corrective actions. To ensure
+	confidentiality and compliance with regulations, Hospitoolity offers
+	secure data storage accessible from any device with internet access,
+	allowing for effective team collaboration.</p>
+
+<p>Beyond data management, Hospitoolity provides reporting and
+	analytical capabilities. These features enable businesses to identify
+	potential areas for improvement and demonstrate regulatory compliance
+	efficiently. The overarching goal of these features is to improve food
+	safety and quality by quickly identifying and addressing potential
+	hazards.</p>

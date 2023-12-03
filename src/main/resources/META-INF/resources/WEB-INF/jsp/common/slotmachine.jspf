@@ -1,0 +1,124 @@
+
+<style type="text/css">
+#slot-machine {
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#result-div {
+	font-size: 18px;
+	text-align: center;
+	margin-top: 10px;
+}
+</style>
+
+<div class="d-flex justify-content-between">
+	<h2>Slot machine</h2>
+	<div>
+		<a
+			href="https://github.com/MarcinPasynczuk/Black-Jack-and-slot-machine."
+			target="_blank" class="btn btn-info">View code</a>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-6">
+			<div id="slot-machine"></div>
+			<div id="result-div"></div>
+		</div>
+
+		<div class="col-6">
+			<br>
+			<p>
+				Credit: <span id="credit">10000</span>&pound;
+			</p>
+			<input type="number" id="bet-input" min="1" max="10000" value="1">
+			<button id="spin-button">Spin</button>
+		</div>
+	</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+	type="text/javascript"></script>
+<script type="text/javascript">
+	var symbols = [ "\u2665", "\u2605", "\u266A", "\u263A", "\u2663", "\u26E4",
+			"\u2657" ];
+	var multipliers = [ 100, 150, 200, 250, 300, 350, 400 ];
+	var credit = 10000;
+
+	function getRandomSymbol() {
+		var randomIndex = Math.floor(Math.random() * symbols.length);
+		return symbols[randomIndex];
+	}
+
+	function spinSlotMachine() {
+		var betAmount = getBetAmount();
+
+		if (betAmount > credit) {
+			alert("You don't have enough credit for this bet.");
+			return;
+		}
+
+		var results = [];
+
+		for (var i = 0; i < 3; i++) {
+			var symbol = getRandomSymbol();
+			results.push(symbol);
+		}
+
+		var resultText = results.join(" ");
+		var winAmount = calculateWinAmount(results);
+
+		if (winAmount > 0) {
+			credit += winAmount;
+			updateUI(resultText, "Congratulations! You won: " + winAmount
+					+ " &pound;", true);
+		} else {
+			credit -= betAmount;
+			updateUI(resultText, "Better luck next time! Keep playing!", false);
+		}
+
+		$("#bet-input").val(getNewBetAmount(winAmount));
+		$("#credit").text(credit);
+	}
+
+	function calculateWinAmount(results) {
+		var winAmount = 0;
+
+		if (results[0] === results[1] && results[1] === results[2]) {
+			var symbolIndex = symbols.indexOf(results[0]);
+			winAmount = multipliers[symbolIndex] * getBetAmount();
+		}
+
+		return winAmount;
+	}
+
+	function getBetAmount() {
+		return parseInt($("#bet-input").val());
+	}
+
+	function getNewBetAmount(winAmount) {
+		return winAmount > 0 ? getBetAmount() * 2 : getBetAmount();
+	}
+
+	function updateUI(resultText, message, isWin) {
+		$("#slot-machine").text(resultText);
+		$("#result-div").text(message);
+
+		if (isWin) {
+			$("#result-div").css("color", "green");
+		} else {
+			$("#result-div").css("color", "red");
+		}
+	}
+
+	$(document).ready(function() {
+		$("#spin-button").click(function() {
+			spinSlotMachine();
+		});
+	});
+</script>
